@@ -1,0 +1,145 @@
+/* Main */
+main {
+    background-color: black;
+    color: white;
+    padding: 5% 30%;
+}
+
+.container-login {
+    background-color: #001233;
+    color: white;
+    padding: 12%;
+    border-radius: 5%;
+}
+
+.container-login h1 {
+    margin-bottom: 10%;
+}
+
+.container-login button {
+    padding: 2% 42%;
+    margin-bottom: 8%;
+    background-color: #0E8204;
+    color: white;
+    box-shadow: none !important;
+}
+
+.container-login a {
+    color: white;
+    text-decoration: none;
+}
+
+.container-login a:hover {
+    color: #0E8204;
+}
+
+#link-cadastro {
+    color: #0E8204;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para dispositivos móveis (telas menores que 576px) */
+@media (max-width: 576px) {
+    main {
+        padding: 5% 5%;
+    }
+
+    .container-login {
+        padding: 8%;
+        border-radius: 3%;
+    }
+
+    .container-login h1 {
+        font-size: 1.5em;
+        margin-bottom: 5%;
+    }
+
+    .container-login button {
+        padding: 2% 20%;
+    }
+
+    .bnt-login {
+        padding: 2px 15px !important;
+    }
+
+    .input-group .form-control,
+    .input-group .input-group-text {
+        font-size: 14px;
+    }
+
+    .container-login a {
+        font-size: 0.9em;
+    }
+
+    .container-login a:hover {
+        color: #0E8204;
+    }
+}
+
+/* Para tablets (telas entre 576px e 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+    main {
+        padding: 5% 15%;
+    }
+
+    .container-login {
+        padding: 10%;
+        border-radius: 4%;
+    }
+
+    .container-login h1 {
+        font-size: 1.8em;
+        margin-bottom: 7%;
+    }
+
+    .container-login button {
+        padding: 2% 30%;
+    }
+
+    .bnt-login {
+        padding: 2px 20px !important;
+    }
+
+    .input-group .form-control,
+    .input-group .input-group-text {
+        font-size: 16px;
+    }
+
+    .container-login a {
+        font-size: 1em;
+    }
+
+    .container-login a:hover {
+        color: #0E8204;
+    }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.merriweather-regular {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.merriweather-black {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: bold;
+}
+
+.bree-serif-regular {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.noto-serif-class {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}

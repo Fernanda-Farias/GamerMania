@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Site da GameMania">
+    <meta name="author" content="Fernanda Farias">
+    <meta name="keywords" content="Game, Jogos, Computador, Notebook, Loja, Gamer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamerMania</title>
+    <link rel="icon" href="assets/logo-iniciais.png">
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <!-- Menu -->
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <button class="btn" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                        <img src="assets/menu.png" width="30" alt="Menu">
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                    aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p>Try scrolling the rest of the page to see this option in action.</p>
+                    </div>
+                </div>
+                <!-- Logo -->
+                <a class="logo-header ms-3" onclick="window.location.href='index.html'"><img
+                        src="assets/logo-gamermania.png" alt="logo-gamermania"></a>
+                <!-- Caixa de busca -->
+                <form class="container search-bar d-flex align-items-center flex-grow-1 mx-3">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Digite aqui o que você procura..."
+                            aria-label="Search">
+                        <span class="input-group-text"><img src="assets/lupa.png" alt="Lupa"></span>
+                    </div>
+                </form>
+                <!-- Links -->
+                <div class="d-flex align-items-center">
+                    <nav class="navbar navbar-expand-md">
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav me-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">SOBRE</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">PRODUTOS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">CONTATOS</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- Botões -->
+                    <a class="imagem-carrinho align-items-center ms-4 me-2"><img src="assets/carrinho.png"
+                            alt="Carrinho"></a>
+                    <button class="btn d-flex bnt-login ms-3 justify-content-center merriweather-black" type="button">
+                        <img src="assets/user.png" alt="user">ENTRAR
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container d-flex justify-content-center container-login">
+            <div class="container-login-form">
+                <h1 class="merriweather-black">Faça seu login</h1>
+                <span id="erro"></span>
+                <form name="loginusuario" method="post">
+                    <div class="mb-3">
+                        <label for="usuario" class="form-label">Usuário</label>
+                        <input type="text" class="form-control" id="usuario" name="usuario"
+                            placeholder="Email, CPF ou Número" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="senha" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="senha" name="senha"
+                            placeholder="Insira sua senha">
+                    </div>
+                    <button class="bnt rounded-3" type="button" onclick="login()">Entrar</button>
+                </form>
+                <p><a href="">Esqueceu sua senha?</a></p>
+                <p>Não tem uma conta? <a href="#" id="link-cadastro">Cadastre-se</a></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-footer">
+            <div class="container-footer-infos align-items-center">
+                <div class="container-infos d-flex">
+                    <div class="container container-infos-1">
+                        <h4 class="merriweather-black">Institucional</h4>
+                        <p><a href="#">Sobre a GamerMania</a></p>
+                        <p><a href="#">Política de Entrega</a></p>
+                        <p><a href="#">Política de Venda</a></p>
+                        <p><a href="#">Política de Devolução e Troca</a></p>
+                        <p><a href="#">Política de Privacidade</a></p>
+                        <p><a href="#">Política de Garantia</a></p>
+                        <h4 class="merriweather-black">Acessibilidade</h4>
+                        <p><a href="#">Acessibilidade</a></p>
+                    </div>
+                    <div class="container container-infos-2">
+                        <h4 class="merriweather-black">Categorias de Produto</h4>
+                        <p><a href="#">Ação</a></p>
+                        <p><a href="#">Aventura</a></p>
+                        <p><a href="#">RPG</a></p>
+                        <p><a href="#">Battle Royale</a></p>
+                        <p><a href="#">Estratégia Em Tempo Real</a></p>
+                        <p><a href="#">Esportes</a></p>
+                        <p><a href="#">Sandbox</a></p>
+                        <p><a href="#">MOBA</a></p>
+                    </div>
+                    <div class="container container-infos-3">
+                        <h4 class="merriweather-black">Minha Conta</h4>
+                        <p><a href="#">Meus Pedidos</a></p>
+                        <p><a href="">Meus Dados</a></p>
+                        <p><a href="">Cadastrar</a></p>
+                        <p><a href="">Excluir</a></p>
+                        <h4 class="merriweather-black" id="redes-sociais">Siga-nos Nas Redes Sociais</h4>
+                        <a href=""><img src="assets/facebook.png" alt="facebook" id="facebook"></a>
+                        <a href=""><img src="assets/instagram.png" alt="instagram" id="instagram"></a>
+                    </div>
+                    <div class="container container-infos-4">
+                        <h4 class="merriweather-black">Fale Conosco</h4>
+                        <p><img src="" alt=""><a href="">0800 994 215</a></p>
+                        <p><img src="" alt=""><a href="">contato@gamermania.com</a></p>
+                        <h4 class="merriweather-black">Atendimento</h4>
+                        <p>De Segunda a Sábado</p>
+                        <p>Das 08:00h às 18:00h</p>
+                        <p>(Exceto Domingos e Feriados)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-footer-empresa">
+                <div
+                    class="container container-empresa text-center d-flex flex-column align-items-center justify-content-center bree-serif-regular">
+                    <img src="assets/logo-gamermania.png" alt="logo-gamermania">
+                    <p>CNPJ: 27.455.097/0001-21</p>
+                    <p>Endereço: Rua Sebastião Alves, 1329</p>
+                    <p>Centro - São Paulo/SP</p>
+                    <p>CEP: 65720-021</p>
+                    <p id="direitos">© 2021 GamerMania. Todos os direitos reservados.</p>
+                </div>
+            </div>
+    </footer>
+
+</body>
+
+</html>
