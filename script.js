@@ -9,6 +9,8 @@ function login() {
         return;
     }
 
+    // mudei aqui
+
     // Aqui você pode adicionar a lógica de autenticação real, como enviar os dados para um servidor
     if (usuario === 'Fernanda' && senha === '123') {
         alert('Login feito com sucesso!');
