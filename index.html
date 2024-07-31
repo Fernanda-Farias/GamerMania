@@ -22,52 +22,52 @@
   <!-- Header-->
   <header>
     <div class="container header-container d-flex flex-column flex-md-row align-items-center">
-      <!-- Menu -->
-      <div class="d-flex justify-content-between align-items-center w-100">
-        <div class="menu-logo">
-          <button class="btn bnt-menu" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-            <img src="assets/menu.png" width="30" alt="Menu">
-          </button>
-          <!-- Logo -->
-          <a class="logo-header ms-3" onclick="window.location.href='index.html'">
-            <img src="assets/logo-gamermania.png" alt="logo-gamermania">
-          </a>
+      <!-- Logo -->
+      <a class="logo-header ms-3" onclick="window.location.href='index.html'">
+        <img src="assets/logo-gamermania.png" alt="logo-gamermania">
+      </a>
+      <!-- Caixa de pesquisa -->
+      <form class="container search-bar d-flex align-items-center flex-grow-1 my-3 my-md-0">
+        <div class="input-group">
+          <input class="form-control" type="search" placeholder="Digite aqui o que você procura..." aria-label="Search">
+          <span class="input-group-text"><img src="assets/lupa.png" alt="Lupa"></span>
         </div>
-        <!-- Caixa de pesquisa -->
-        <form class="container search-bar d-flex align-items-center flex-grow-1 my-3 my-md-0">
-          <div class="input-group">
-            <input class="form-control" type="search" placeholder="Digite aqui o que você procura..."
-              aria-label="Search">
-            <span class="input-group-text"><img src="assets/lupa.png" alt="Lupa"></span>
-          </div>
-        </form>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-md w-100">
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto w-100 justify-content-around">
-              <li class="nav-item">
-                <a class="nav-link" href="#">SOBRE</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">PRODUTOS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">CONTATOS</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <!-- Imagem do carrinho e botão de login -->
-        <div class="d-flex align-items-center ms-auto carrinho-login">
-          <a class="imagem-carrinho align-items-center me-2">
-            <img src="assets/carrinho.png" alt="Carrinho">
-          </a>
-          <button class="btn d-flex bnt-login ms-3 justify-content-center" type="button"
-            onclick="window.location.href='login.html'">
-            <img src="assets/user.png" alt="user"> <span class="text-login">ENTRAR</span>
+      </form>
+      <!-- Navbar -->
+      <!-- Menu com os links para telas menores-->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="assets/menu.png" alt="menu-categorias">
           </button>
+
+          <nav class="navbar navbar-expand-md w-100">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto w-100 justify-content-around">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SOBRE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">PRODUTOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CONTATOS</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
+      </nav>
+      <!-- Imagem do carrinho e botão de login -->
+      <div class="d-flex carrinho-login">
+        <a class="imagem-carrinho align-items-center me-2">
+          <img src="assets/carrinho.png" alt="Carrinho">
+        </a>
+        <button class="btn d-flex bnt-login ms-3 justify-content-center" type="button"
+          onclick="window.location.href='login.html'">
+          <img src="assets/user.png" alt="user"> <span class="text-login">ENTRAR</span>
+        </button>
       </div>
     </div>
   </header>

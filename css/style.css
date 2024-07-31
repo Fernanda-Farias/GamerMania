@@ -1,21 +1,19 @@
-/* Estilos gerais */
+/*--------------------------------------------------- Header-------------------------------------------- */
 header {
     background-color: #001233;
     padding: 0.8%;
 }
 
 .logo-header img {
-    margin-top: 2.2%;
-    width: 90%;
+    width: 80%;
     max-width: 100%;
 }
 
 .logo-header {
     margin-right: 0%;
     cursor: pointer;
-}
-.menu-logo{
     display: flex;
+    justify-content: center;
 }
 
 .navbar-nav .nav-link {
@@ -61,8 +59,10 @@ header {
 }
 
 .bnt-login {
-    padding: 2px 25px !important;
+    height: 50%;
+    padding: 5px 25px !important;
     background-color: #4CAF50 !important;
+    margin-top: 3%;
     color: white !important;
     box-shadow: none !important;
     font-size: 14px;
@@ -74,50 +74,55 @@ header {
 .bnt-login img {
     width: 40%;
 }
-/* Layout para telas menores */
+
+/* Layout para telas menores da header */
 @media (max-width: 768px) {
     .header-container {
-        flex-direction: column;
         align-items: center;
     }
 
-    .d-flex {
-        flex-direction: column;
+    .navbar-toggler img {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .menu-logo{
-        display: block;
-    }
-
-    .carrinho-login {
-        order: 2; /* Faz com que o carrinho e o login fiquem abaixo dos outros itens */
-        margin-top:5px; /* Espaço acima para separá-los dos itens acima */
+    .navbar-toggler{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .bnt-menu img {
-        width: 30px; /* Ajustar tamanho do ícone do menu */
-        margin-top: 17%;
+        width: 30px;
     }
 
     .logo-header img {
-        width: 120px; /* Ajustar tamanho da logo */
-        margin-top: 0%;
+        width: 120px;
+        margin-top: 5%;
     }
 
     .search-bar {
         width: 100%;
-        margin-top: 20px; /* Margem superior para separar a pesquisa dos itens acima */
+        margin-top: 20px;
+        /* Margem superior para separar a pesquisa dos itens acima */
     }
 
     .bnt-login {
-        width: 60%; /* Ajustar largura do botão de login */
+        width: 38%;
+        margin-top: 0%;
+        /* Ajustar largura do botão de login */
     }
-
-    .imagem-carrinho img {
-        width: 2.5em; /* Ajustar tamanho da imagem do carrinho */
+    .carrinho-login{
+        margin-bottom: 4%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
-/* Main */
+/*----------------------------------------------------- Main ----------------------------------------------------------------*/
 main {
     background-color: black;
 }
@@ -139,13 +144,17 @@ main {
     background-color: #060606 !important;
     color: white;
     padding: 1%;
-    width: 20%;
+    width: 19%;
     text-align: center;
+    justify-content: space-between;
     border-width: 1px !important;
     border-color: #4F4F4F !important;
 }
 
 .cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    flex-wrap: wrap;
     padding: 2%;
     gap: 15px;
 }
@@ -171,6 +180,9 @@ main {
 .card-title {
     font-size: 1em;
     font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card a {
@@ -262,7 +274,23 @@ main {
     background-image: url("/empresas/activision.jpg");
 }
 
-/* Footer */
+@media (max-width: 768px) {
+    .container-banner img{
+        width: 130%;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        width: 60%;
+        gap: 15px
+    }
+    .card{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ------------------------------------------------------------- Footer---------------------------------------------------------- */
 .container-infos {
     padding: 3%;
     color: white;
