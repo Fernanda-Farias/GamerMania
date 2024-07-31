@@ -1,16 +1,21 @@
-/* Header */
+/* Estilos gerais */
 header {
     background-color: #001233;
     padding: 0.8%;
 }
 
 .logo-header img {
-    width: 80%;
+    margin-top: 2.2%;
+    width: 90%;
+    max-width: 100%;
 }
 
 .logo-header {
     margin-right: 0%;
     cursor: pointer;
+}
+.menu-logo{
+    display: flex;
 }
 
 .navbar-nav .nav-link {
@@ -29,23 +34,6 @@ header {
 
 .btn-custom-background {
     background-color: #0E8204 !important;
-}
-
-/* Media query para dispositivos menores */
-@media (max-width: 576px) {
-    .btn-custom-size {
-        width: 100%;
-        max-width: none;
-        padding: 12px;
-    }
-
-    .logo-header img {
-        width: 60%;
-    }
-
-    .imagem-carrinho img {
-        width: 2em;
-    }
 }
 
 .input-group {
@@ -85,6 +73,48 @@ header {
 
 .bnt-login img {
     width: 40%;
+}
+/* Layout para telas menores */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .d-flex {
+        flex-direction: column;
+    }
+    .menu-logo{
+        display: block;
+    }
+
+    .carrinho-login {
+        order: 2; /* Faz com que o carrinho e o login fiquem abaixo dos outros itens */
+        margin-top:5px; /* Espaço acima para separá-los dos itens acima */
+    }
+
+    .bnt-menu img {
+        width: 30px; /* Ajustar tamanho do ícone do menu */
+        margin-top: 17%;
+    }
+
+    .logo-header img {
+        width: 120px; /* Ajustar tamanho da logo */
+        margin-top: 0%;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-top: 20px; /* Margem superior para separar a pesquisa dos itens acima */
+    }
+
+    .bnt-login {
+        width: 60%; /* Ajustar largura do botão de login */
+    }
+
+    .imagem-carrinho img {
+        width: 2.5em; /* Ajustar tamanho da imagem do carrinho */
+    }
 }
 
 /* Main */
@@ -308,7 +338,7 @@ main {
         width: 45%;
         /* Ajusta o tamanho do card para telas médias */
     }
-    
+
     .container-banner {
         padding: 5%;
     }
@@ -320,19 +350,19 @@ main {
         padding: 5% 5%;
         /* Reduz o padding em telas menores */
     }
-    
+
     .card {
         width: 100%;
         /* Ajusta o tamanho do card para telas pequenas */
     }
-    
+
     .empresas-jogos button {
         width: 100%;
         height: auto;
         margin: 10px 0;
         /* Ajusta o tamanho dos botões para telas pequenas */
     }
-    
+
     .logo-header img {
         width: 60%;
         /* Ajusta o tamanho da logo em telas pequenas */
@@ -358,6 +388,7 @@ main {
         /* Ajusta o padding e o tamanho da fonte do botão de login em telas pequenas */
     }
 }
+
 /* Fontes importadas */
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Serif:wght@100..900&display=swap');
 

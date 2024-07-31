@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Site da GameMania">
+  <meta name="description" content="Site da GamerMania">
   <meta name="author" content="Fernanda Farias">
   <meta name="keywords" content="Game, Jogos, Computador, Notebook, Loja, Gamer">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,63 +21,58 @@
 <body>
   <!-- Header-->
   <header>
-    <div class="container header-container">
+    <div class="container header-container d-flex flex-column flex-md-row align-items-center">
       <!-- Menu -->
-      <div class="d-flex justify-content-between align-items-center">
-        <div class="d-flex align-items-center">
-          <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
-            aria-controls="offcanvasWithBothOptions">
+      <div class="d-flex justify-content-between align-items-center w-100">
+        <div class="menu-logo">
+          <button class="btn bnt-menu" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
             <img src="assets/menu.png" width="30" alt="Menu">
           </button>
+          <!-- Logo -->
+          <a class="logo-header ms-3" onclick="window.location.href='index.html'">
+            <img src="assets/logo-gamermania.png" alt="logo-gamermania">
+          </a>
         </div>
-        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-          aria-labelledby="offcanvasWithBothOptionsLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <p>Try scrolling the rest of the page to see this option in action.</p>
-          </div>
-        </div>
-        <!-- Logo -->
-        <a class="logo-header ms-3" onclick="window.location.href='index.html'"><img src="assets/logo-gamermania.png"
-            alt="logo-gamermania"></a>
-        <!-- Caixa de busca -->
-        <form class="container search-bar d-flex align-items-center flex-grow-1 mx-3">
+        <!-- Caixa de pesquisa -->
+        <form class="container search-bar d-flex align-items-center flex-grow-1 my-3 my-md-0">
           <div class="input-group">
             <input class="form-control" type="search" placeholder="Digite aqui o que você procura..."
               aria-label="Search">
             <span class="input-group-text"><img src="assets/lupa.png" alt="Lupa"></span>
           </div>
         </form>
-        <!-- Links -->
-        <div class="d-flex align-items-center">
-          <nav class="navbar navbar-expand-md">
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">SOBRE</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">PRODUTOS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">CONTATOS</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <!-- Botões -->
-          <a class="imagem-carrinho align-items-center ms-4 me-2"><img src="assets/carrinho.png" alt="Carrinho"></a>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md w-100">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto w-100 justify-content-around">
+              <li class="nav-item">
+                <a class="nav-link" href="#">SOBRE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PRODUTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTATOS</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Imagem do carrinho e botão de login -->
+        <div class="d-flex align-items-center ms-auto carrinho-login">
+          <a class="imagem-carrinho align-items-center me-2">
+            <img src="assets/carrinho.png" alt="Carrinho">
+          </a>
           <button class="btn d-flex bnt-login ms-3 justify-content-center" type="button"
             onclick="window.location.href='login.html'">
-            <img src="assets/user.png" alt="user">ENTRAR
+            <img src="assets/user.png" alt="user"> <span class="text-login">ENTRAR</span>
           </button>
         </div>
       </div>
     </div>
   </header>
+
+
 
   <!-- Main -->
   <main>
@@ -153,6 +148,7 @@
             </div>
           </div>
         </section>
+
         <!-- Mais vendidos -->
         <section class="mais-vendidos">
           <p class="titulos-main mt-5">Mais Vendidos</p>
@@ -284,7 +280,6 @@
               </div>
             </div>
           </div>
-
         </section>
       </div>
     </div>
