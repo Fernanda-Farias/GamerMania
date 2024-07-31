@@ -282,12 +282,13 @@ main {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         display: flex;
-        width: 60%;
-        gap: 15px
+        gap: 15px;
+        width: 100%;
     }
-    .card{
-        grid-template-columns: repeat(2, 1fr);
+    .empresas-jogos button{
+        width: 300%;
     }
+
 }
 
 /* ------------------------------------------------------------- Footer---------------------------------------------------------- */
