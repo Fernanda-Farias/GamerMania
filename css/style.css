@@ -285,10 +285,6 @@ main {
         gap: 15px;
         width: 100%;
     }
-    .empresas-jogos button{
-        width: 300%;
-    }
-
 }
 
 /* ------------------------------------------------------------- Footer---------------------------------------------------------- */
@@ -362,16 +358,7 @@ main {
 /* Media Queries para Responsividade */
 
 /* Para dispositivos com largura máxima de 768px */
-@media (max-width: 768px) {
-    .card {
-        width: 45%;
-        /* Ajusta o tamanho do card para telas médias */
-    }
 
-    .container-banner {
-        padding: 5%;
-    }
-}
 
 /* Para dispositivos com largura máxima de 576px */
 @media (max-width: 576px) {
@@ -385,12 +372,6 @@ main {
         /* Ajusta o tamanho do card para telas pequenas */
     }
 
-    .empresas-jogos button {
-        width: 100%;
-        height: auto;
-        margin: 10px 0;
-        /* Ajusta o tamanho dos botões para telas pequenas */
-    }
 
     .logo-header img {
         width: 60%;
@@ -408,14 +389,10 @@ main {
 
     .titulos-main {
         font-size: 1.2em;
-        /* Reduz o tamanho da fonte dos títulos em telas pequenas */
+
     }
 
-    .bnt-login {
-        padding: 10px 20px;
-        font-size: 12px;
-        /* Ajusta o padding e o tamanho da fonte do botão de login em telas pequenas */
-    }
+    
 }
 
 /* Fontes importadas */
