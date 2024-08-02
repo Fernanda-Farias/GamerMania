@@ -37,9 +37,7 @@ main {
     color: #0E8204;
 }
 
-/* Media Queries para Responsividade */
-
-/* Para dispositivos móveis (telas menores que 576px) */
+/*---Media Query da Main---*/
 @media (max-width: 576px) {
     main {
         padding: 5% 5%;
@@ -70,44 +68,6 @@ main {
 
     .container-login a {
         font-size: 0.9em;
-    }
-
-    .container-login a:hover {
-        color: #0E8204;
-    }
-}
-
-/* Para tablets (telas entre 576px e 768px) */
-@media (min-width: 576px) and (max-width: 768px) {
-    main {
-        padding: 5% 15%;
-    }
-
-    .container-login {
-        padding: 10%;
-        border-radius: 4%;
-    }
-
-    .container-login h1 {
-        font-size: 1.8em;
-        margin-bottom: 7%;
-    }
-
-    .container-login button {
-        padding: 2% 30%;
-    }
-
-    .bnt-login {
-        padding: 2px 20px !important;
-    }
-
-    .input-group .form-control,
-    .input-group .input-group-text {
-        font-size: 16px;
-    }
-
-    .container-login a {
-        font-size: 1em;
     }
 
     .container-login a:hover {

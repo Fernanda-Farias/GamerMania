@@ -75,7 +75,7 @@ header {
     width: 40%;
 }
 
-/* Layout para telas menores da header */
+/*---Media Query da Header---*/
 @media (max-width: 768px) {
     .header-container {
         align-items: center;
@@ -86,7 +86,8 @@ header {
         margin-left: auto;
         margin-right: auto;
     }
-    .navbar-toggler{
+
+    .navbar-toggler {
         display: flex;
         margin-left: auto;
         margin-right: auto;
@@ -97,22 +98,21 @@ header {
     }
 
     .logo-header img {
-        width: 120px;
+        width: 60%;
         margin-top: 5%;
     }
 
     .search-bar {
         width: 100%;
         margin-top: 20px;
-        /* Margem superior para separar a pesquisa dos itens acima */
     }
 
     .bnt-login {
         width: 38%;
         margin-top: 0%;
-        /* Ajustar largura do botão de login */
     }
-    .carrinho-login{
+
+    .carrinho-login {
         margin-bottom: 4%;
         display: flex;
         align-items: center;
@@ -222,7 +222,6 @@ main {
     font-size: 0.7em;
 }
 
-/* Empresas de jogos */
 .empresas-jogos {
     display: flex;
     flex-direction: column;
@@ -274,22 +273,42 @@ main {
     background-image: url("/empresas/activision.jpg");
 }
 
+/*---Media Query da Main---*/
 @media (max-width: 768px) {
-    .container-banner img{
-        width: 130%;
+    .container-banner img {
+        width: 110%;
+        padding: 5%;
     }
-    .cards{
+
+    .cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         display: flex;
         gap: 15px;
         width: 100%;
     }
+
+    .titulos-main {
+        font-size: 1.2em;
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .empresas-jogos button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 /* ------------------------------------------------------------- Footer---------------------------------------------------------- */
 .container-infos {
-    padding: 3%;
+    padding: 3% 8%;
     color: white;
 }
 
@@ -355,44 +374,31 @@ main {
     gap: 2%;
 }
 
-/* Media Queries para Responsividade */
-
-/* Para dispositivos com largura máxima de 768px */
-
-
-/* Para dispositivos com largura máxima de 576px */
+/*---Media Query do Footer---*/
 @media (max-width: 576px) {
-    main {
-        padding: 5% 5%;
-        /* Reduz o padding em telas menores */
+    .container-infos {
+        text-align: center;
+        padding-top: 10%;
     }
 
-    .card {
-        width: 100%;
-        /* Ajusta o tamanho do card para telas pequenas */
+    .container-infos a,
+    .container-infos p {
+        margin-left: 0%
     }
 
-
-    .logo-header img {
-        width: 60%;
-        /* Ajusta o tamanho da logo em telas pequenas */
+    .container-empresa img {
+        width: 80%;
+        margin-bottom: 7%;
     }
 
-    .imagem-carrinho img {
-        width: 2em;
-        /* Ajusta o tamanho do ícone de carrinho em telas pequenas */
+    .container-empresa p {
+        margin-bottom: 0%;
     }
 
-    .container-banner {
-        padding: 5%;
+    .container-footer-empresa {
+        padding-bottom: 10%
     }
 
-    .titulos-main {
-        font-size: 1.2em;
-
-    }
-
-    
 }
 
 /* Fontes importadas */

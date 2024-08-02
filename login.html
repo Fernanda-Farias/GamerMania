@@ -20,25 +20,33 @@
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- Header-->
     <header>
-        <div class="container header-container">
-                <!-- Logo -->
-                <a class="logo-header ms-3" onclick="window.location.href='index.html'"><img
-                        src="assets/logo-gamermania.png" alt="logo-gamermania"></a>
-                <!-- Caixa de busca -->
-                <form class="container search-bar d-flex align-items-center flex-grow-1 mx-3">
-                    <div class="input-group">
-                        <input class="form-control" type="search" placeholder="Digite aqui o que você procura..."
-                            aria-label="Search">
-                        <span class="input-group-text"><img src="assets/lupa.png" alt="Lupa"></span>
-                    </div>
-                </form>
-                <!-- Links -->
-                <div class="d-flex align-items-center">
-                    <nav class="navbar navbar-expand-md">
+        <div class="container header-container d-flex flex-column flex-md-row align-items-center">
+            <!-- Logo -->
+            <a class="logo-header ms-3" onclick="window.location.href='index.html'">
+                <img src="assets/logo-gamermania.png" alt="logo-gamermania">
+            </a>
+            <!-- Caixa de pesquisa -->
+            <form class="container search-bar d-flex align-items-center flex-grow-1 my-3 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="search" placeholder="Digite aqui o que você procura..."
+                        aria-label="Search">
+                    <span class="input-group-text"><img src="assets/lupa.png" alt="Lupa"></span>
+                </div>
+            </form>
+            <!-- Navbar -->
+            <!-- Menu com os links para telas menores-->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="assets/menu.png" alt="menu-categorias">
+                    </button>
+
+                    <nav class="navbar navbar-expand-md w-100">
                         <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav me-auto">
+                            <ul class="navbar-nav me-auto w-100 justify-content-around">
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">SOBRE</a>
                                 </li>
@@ -51,13 +59,17 @@
                             </ul>
                         </div>
                     </nav>
-                    <!-- Botões -->
-                    <a class="imagem-carrinho align-items-center ms-4 me-2"><img src="assets/carrinho.png"
-                            alt="Carrinho"></a>
-                    <button class="btn d-flex bnt-login ms-3 justify-content-center merriweather-black" type="button">
-                        <img src="assets/user.png" alt="user">ENTRAR
-                    </button>
                 </div>
+            </nav>
+            <!-- Imagem do carrinho e botão de login -->
+            <div class="d-flex carrinho-login">
+                <a class="imagem-carrinho align-items-center me-2">
+                    <img src="assets/carrinho.png" alt="Carrinho">
+                </a>
+                <button class="btn d-flex bnt-login ms-3 justify-content-center" type="button"
+                    onclick="window.location.href='login.html'">
+                    <img src="assets/user.png" alt="user"> <span class="text-login">ENTRAR</span>
+                </button>
             </div>
         </div>
     </header>
@@ -87,11 +99,12 @@
     </main>
 
     <!-- Footer -->
+    <!-- Links -->
     <footer>
         <div class="container-footer">
-            <div class="container-footer-infos align-items-center">
-                <div class="container-infos d-flex">
-                    <div class="container container-infos-1">
+            <div class="container-footer-infos grid-container justify-content-center align-items-center">
+                <div class="container-infos row gx-5 custom-gx">
+                    <div class="container container-infos-1 col-xs-12 col-sm-12 col-md-3 col-lg-3 mb-4">
                         <h4 class="merriweather-black">Institucional</h4>
                         <p><a href="#">Sobre a GamerMania</a></p>
                         <p><a href="#">Política de Entrega</a></p>
@@ -102,7 +115,7 @@
                         <h4 class="merriweather-black">Acessibilidade</h4>
                         <p><a href="#">Acessibilidade</a></p>
                     </div>
-                    <div class="container container-infos-2">
+                    <div class="container container-infos-2 col-xs-12 col-sm-12 col-md-3 col-lg-3 mb-4">
                         <h4 class="merriweather-black">Categorias de Produto</h4>
                         <p><a href="#">Ação</a></p>
                         <p><a href="#">Aventura</a></p>
@@ -113,7 +126,7 @@
                         <p><a href="#">Sandbox</a></p>
                         <p><a href="#">MOBA</a></p>
                     </div>
-                    <div class="container container-infos-3">
+                    <div class="container container-infos-3 col-xs-12 col-sm-12 col-md-3 col-lg-3 mb-4">
                         <h4 class="merriweather-black">Minha Conta</h4>
                         <p><a href="#">Meus Pedidos</a></p>
                         <p><a href="">Meus Dados</a></p>
@@ -123,7 +136,7 @@
                         <a href=""><img src="assets/facebook.png" alt="facebook" id="facebook"></a>
                         <a href=""><img src="assets/instagram.png" alt="instagram" id="instagram"></a>
                     </div>
-                    <div class="container container-infos-4">
+                    <div class="container container-infos-4 col-xs-12 col-sm-12 col-md-3 col-lg-3 mb-4">
                         <h4 class="merriweather-black">Fale Conosco</h4>
                         <p><img src="" alt=""><a href="">0800 994 215</a></p>
                         <p><img src="" alt=""><a href="">contato@gamermania.com</a></p>
@@ -134,6 +147,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Sobre a empresa -->
             <div class="container-footer-empresa">
                 <div
                     class="container container-empresa text-center d-flex flex-column align-items-center justify-content-center bree-serif-regular">
@@ -142,7 +156,7 @@
                     <p>Endereço: Rua Sebastião Alves, 1329</p>
                     <p>Centro - São Paulo/SP</p>
                     <p>CEP: 65720-021</p>
-                    <p id="direitos">© 2021 GamerMania. Todos os direitos reservados.</p>
+                    <p id="direitos">© 2024 GamerMania. Todos os direitos reservados.</p>
                 </div>
             </div>
     </footer>
