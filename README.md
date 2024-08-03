@@ -18,5 +18,5 @@ fornecido o briefing com um cliente que deseja um site para realizar venda de jo
 
 <h2>Visualização</h2>
 <h4>O site foi hospedado temporariamente no Github Pages, e pode ser visualizado através dos seguintes links:</h4>
-<a href="https://fernanda-farias.github.io/GamerMania/">Tela Principal</a>
+<a href="https://fernanda-farias.github.io/GamerMania/">Tela Principal</a><br>
 <a href="https://fernanda-farias.github.io/GamerMania/login.html">Tela de Login</a>
