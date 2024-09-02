@@ -15,3 +15,8 @@ fornecido o briefing com um cliente que deseja um site para realizar venda de jo
     <li>Bootstrap: responsividade e alguns estilos.</li>
     <li>JavaScript: verificação de dados para efetuar o login.</li>
 </ul>
+
+<h2>Visibilidade</h2>
+<h4>O site está no ar pelo GitHub Pages. Clique nos seguintes links para acessar:</h4>
+<a href="https://fernanda-farias.github.io/GamerMania/">Tela Principal</a><br>
+<a href="https://fernanda-farias.github.io/GamerMania/login.html">Tela de Login</a>
